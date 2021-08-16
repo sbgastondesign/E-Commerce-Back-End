@@ -3,26 +3,26 @@
   "version": "1.0.0",
   "description": "Back end e-commerce that uses Express.js API and MySQL database",
   "main": "server.js",
-  "dependencies": {
-    "dotenv": "^8.6.0",
-    "express": "^4.17.1",
-    "mysql2": "^2.3.0",
-    "sequelize": "^5.22.4"
-  },
-  "devDependencies": {},
-  "nodemon": "^2.0.12",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sbgastondesign/E-Commerce-Back-End.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/sbgastondesign/E-Commerce-Back-End/issues"
+  "devDependencies": {
+    "nodemon": "^2.0.12"
   },
-  "homepage": "https://github.com/sbgastondesign/E-Commerce-Back-End#readme"
+  "dependencies": {
+    "dotenv": "^8.6.0",
+    "express": "^4.17.1",
+    "mysql2": "^2.3.0",
+    "sequelize": "^5.22.4"
+  }
 }
